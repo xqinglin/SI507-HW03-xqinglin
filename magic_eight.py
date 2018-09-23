@@ -7,7 +7,6 @@ def ask():
 
 def check_question(input):
     size = len(input)
-    print(size)
     if input[size-1] == '?':
         return True
     else:
