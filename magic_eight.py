@@ -4,6 +4,8 @@ def ask():
     print("what is your question?")
     que = input()
     return que
+
+
 def pick_an_answer():
     answer_list = []
     answer_list.append("It is certain.")
@@ -27,13 +29,24 @@ def pick_an_answer():
     answer_list.append("Outlook not so good.")
     answer_list.append("Very doubtful.")
     return answer_list[randint(0, 19)]
-answer = pick_an_answer()
-question = ask()
 
-<<<<<<< HEAD
-=======
-name = ask();
-def check_question(input){
 
-}
->>>>>>> check_question
+def check_question(input):
+    size = len(input)
+    if input[size-1] == '?':
+        return True
+    else:
+        print("I’m sorry, I can only answer questions")
+        return False
+
+
+def main():
+    question = ""
+    while question != "quit":
+        question = ask()
+        is_question = check_question(question)
+        if is_question:
+            print(pick_an_answer())
+
+main()
+
