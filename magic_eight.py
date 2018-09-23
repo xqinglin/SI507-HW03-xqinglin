@@ -5,3 +5,6 @@ def ask():
     return name;
 
 name = ask();
+def check_question(input){
+
+}
