@@ -30,3 +30,10 @@ def pick_an_answer():
 answer = pick_an_answer()
 question = ask()
 
+<<<<<<< HEAD
+=======
+name = ask();
+def check_question(input){
+
+}
+>>>>>>> check_question
